@@ -1,16 +1,14 @@
 {
-  "posts":[
+  "contacts": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
-    }
-  ],
-  "comments" : [
+      "id": "39cdbe8b-42af-4b03-978c-860fb4373f06",
+      "name": "Juan",
+      "email": "juan@mail.com"
+    },
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "id": "5581d045-b568-4f97-a12b-3f05b7856467",
+      "name": "Maria",
+      "email": "maria@mail.com"
     }
   ]
 }
