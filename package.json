@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server -p 3001 -w db.json"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,7 @@
   "homepage": "https://github.com/adonai-luque/contact-manager-json-server#readme",
   "dependencies": {
     "json-server": "^0.16.3"
-  }
+  },
+  "engines": {
+    "node": "12.22.2"
 }
