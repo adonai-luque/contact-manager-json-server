@@ -1,17 +1,23 @@
 {
-  "name": "json-server-deploy",
+  "name": "contact-manager-json-server",
   "version": "1.0.0",
-  "description": "Simple json database to deploy to the host of your choice",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "json-server,heroku, node, REST API"
-  ],
-  "author": "Jesper Orb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonai-luque/contact-manager-json-server.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adonai-luque/contact-manager-json-server/issues"
+  },
+  "homepage": "https://github.com/adonai-luque/contact-manager-json-server#readme",
   "dependencies": {
-    "json-server": "^0.16.2"
+    "json-server": "^0.16.3"
   }
 }
