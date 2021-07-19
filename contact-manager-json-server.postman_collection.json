@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "7e13069f-e3b1-4e43-8e3e-7a91e89ea336",
+		"name": "contact-manager-json-server",
+		"description": "This collection show the endpoints for CRUD operations of a json-server for a contact manager app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New contact",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"testid\",\r\n    \"name\": \"Test\",\r\n    \"email\": \"test@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/contacts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All contacts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/contacts",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific contact",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/contacts/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"contacts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "testid"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update contact",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"testid\",\r\n    \"name\": \"Test Updated\",\r\n    \"email\": \"testupdated@mail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/contacts/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"contacts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "testid"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete contact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/contacts/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"contacts",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "testid"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
